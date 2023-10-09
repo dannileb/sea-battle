@@ -1,9 +1,13 @@
-
-import './App.css';
+import {Route, Routes} from "react-router";
+import MainMenu from "./components/pages/MainMenu/MainMenu";
+import Fight from "./components/pages/Fight/Fight";
 
 function App() {
   return (
-    <p>Hello</p>
+      <Routes>
+          <Route path="/" element={<MainMenu/>}/>
+          <Route path="/fight" element={<Fight/>}/>
+      </Routes>
   );
 }
 
