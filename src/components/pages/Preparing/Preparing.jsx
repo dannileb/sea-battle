@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Fight = () => {
+const Preparing = () => {
     return (
         <div>
-            <p>fight</p>
+
         </div>
     );
 };
 
-export default Fight;
+export default Preparing;

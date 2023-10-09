@@ -1,12 +1,12 @@
 import {Route, Routes} from "react-router";
 import MainMenu from "./components/pages/MainMenu/MainMenu";
-import Fight from "./components/pages/Fight/Fight";
+import FightField from "./components/pages/Fight/FightField";
 
 function App() {
   return (
       <Routes>
           <Route path="/" element={<MainMenu/>}/>
-          <Route path="/fight" element={<Fight/>}/>
+          <Route path="/fight" element={<FightField/>}/>
       </Routes>
   );
 }

@@ -3,6 +3,9 @@ import classes from "./MainMenu.module.css";
 import MenuButton from "../../UI/MenuButton/MenuButton";
 import NameInput from "../../UI/NameInput/NameInput";
 
+//TODO: Сделать стили
+//TODO: MPV 2 - Прописать пропсы к странице боя: username, gameMode
+
 const MainMenu = () => {
     const [name, setName] = useState("");
 
@@ -41,7 +44,7 @@ const MainMenu = () => {
 
             <div className={classes.ButtonsWrapper}>
                 <MenuButton gameMode="queue"/>
-                <MenuButton gameMode="byMiss"/>
+                {/*<MenuButton gameMode="byMiss"/>*/}
             </div>
         </div>
     );
