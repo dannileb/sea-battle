@@ -1,0 +1,13 @@
+.Cell{
+    width: 32px;
+    height: 32px;
+
+    display: inline-block;
+
+    background-color: lightsteelblue;
+    border: 1px solid darkcyan;
+}
+
+.Cell:hover{
+    background-color: darkcyan;
+}

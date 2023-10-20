@@ -1,11 +1,12 @@
 import React, {useState} from 'react';
 import {Outlet} from "react-router";
-import classes from "./FightField.module.css"
+import classes from "./Layout.module.css"
 import GameButton from "../../UI/GameButton/GameButton";
+import Field from "../Field/Field";
 
 //TODO: Сверстать аутлет
 
-const FightField = () => {
+const Layout = () => {
 
     const stages = ["preparing", "userTurn", "aiTurn", "win", "lose"]
 
@@ -48,6 +49,8 @@ const FightField = () => {
 
             <Outlet/>
 
+            <Field></Field>
+
             <GameButton
                 disabled={
                 stage === "aiTurn"
@@ -60,4 +63,4 @@ const FightField = () => {
     );
 };
 
-export default FightField;
+export default Layout;
